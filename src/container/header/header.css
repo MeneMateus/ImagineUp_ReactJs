@@ -1,0 +1,172 @@
+.imagineUp__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagineUp__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.imagineUp__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.imagineUp__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.imagineUp__header-content__input {
+    width: 50%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+}
+
+
+
+.imagineUp__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: rgb(255, 0, 76);
+    border: 2px solid rgb(255, 0, 76);
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-radius: 5px;
+}
+
+.imagineUp__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagineUp__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagineUp__spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.layer1{
+    background-image: url('../../assets/layered-waves-haikei.svg');
+    margin-top: -25%;
+}
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 3s ease-in-out infinite both;
+	        animation: pulsate-bck 3s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+@media screen and (max-width: 1050px) {
+    .imagineUp__header {
+        flex-direction: column;
+    }
+
+    .imagineUp__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagineUp__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .imagineUp__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .imagineUp__header-content__people {
+        flex-direction: column;
+    }
+
+    .imagineUp__header-content__people p {
+        margin: 0;
+    }
+
+    .imagineUp__header-content__input input,
+    .imagineUp__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .imagineUp__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .imagineUp__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .imagineUp__header-content__input input,
+    .imagineUp__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
