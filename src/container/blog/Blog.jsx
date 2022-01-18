@@ -23,10 +23,10 @@ const Blog = () => {
           <img data-aos="fade-up" src={choosing}/>
         </div>
       <div data-aos="fade-up" className="imagineUp__blog-container_groupB">
-        <Card imgUrl={cardImg} data-aos="fade-up" creator="Sep 26, 2021" title="Forest Theme" />
-        <Card imgUrl={cardImg} data-aos="fade-up" creator="Sep 26, 2021" title="Modern Skies" />
-        <Card imgUrl={cardImg} data-aos="fade-up" creator="Sep 26, 2021" title="Party Fiesta" />
-        <Card imgUrl={cardImg} data-aos="fade-up" creator="Sep 26, 2021" title="Futebol Propaganda" />
+        <Card imgUrl={cardImg} data-aos="fade-up" creator="José" title="Forest Theme" />
+        <Card imgUrl={cardImg} data-aos="fade-up" creator="Alex" title="Modern Skies" />
+        <Card imgUrl={cardImg} data-aos="fade-up" creator="Fernando" title="Party Fiesta" />
+        <Card imgUrl={cardImg} data-aos="fade-up" creator="Cesar" title="Futebol Propaganda" />
       </div>
       </div>
   </div>
